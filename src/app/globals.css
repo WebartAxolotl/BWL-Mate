@@ -26,13 +26,16 @@ a {
 
 /* Sidebar */
 .sidebar {
-  background-color: #1e40af; /* Dunkelblau */
+  background-color: #2563eb; /* etwas heller */
   color: white;
   width: 240px;
-  padding: 24px 16px;
+  padding: 32px 16px;
   display: flex;
   flex-direction: column;
+  align-items: center; /* zentriert Logo */
+  text-align: center;
 }
+
 
 .sidebar img {
   width: 48px;
@@ -69,14 +72,30 @@ a {
 .main {
   flex: 1;
   padding: 32px;
-  background-color: #f9fafb;
+  background-color: #f3f4f6; /* sanftes Grau */
   color: #111827;
 }
 
+
 h1, h2, h3 {
-  font-weight: bold;
-  margin-bottom: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
+
+p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+
 
 button {
   background-color: #3b82f6;
@@ -125,3 +144,24 @@ input, select, textarea {
 .dark-mode button:hover {
   background-color: #2563eb;
 }
+
+button {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
